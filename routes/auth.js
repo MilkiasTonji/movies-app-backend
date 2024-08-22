@@ -42,7 +42,7 @@ router.post('/login', async (req, res) => {
     }
 
     const token = sign({ id: user._id }, process.env.JWT_SECRET, {
-      expiresIn: '1h',
+      expiresIn: '24h',
     });
 
     res.json({ success: true, token, message: "User loggedin successfully" });

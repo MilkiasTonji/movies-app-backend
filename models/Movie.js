@@ -13,6 +13,11 @@ const movieSchema = new Schema({
     type: String,
     required: true,
   },
+  userId: {
+    type: String,
+    required: true,
+  },
+  
 });
 
 export default model('Movie', movieSchema);
